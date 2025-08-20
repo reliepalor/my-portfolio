@@ -1,9 +1,9 @@
 export const siteConfig = {
-  name: "John Relie Palor | Developer Portfolio",
+  name: " Relie Palor",
   authorName: "John Relie Palor",
-  username: "reliee",
+  username: "reliee/",
   description:
-    "Aspiring web developer - A modern, responsive Next.js portfolio to showcase skills, projects, and professional journey.",
+    "Aspiring web developer - A modern, responsive portfolio to showcase skills, projects.",
   url: "http://localhost:3000", // leave blank until deployed
   links: {
     twitter: "", // none provided

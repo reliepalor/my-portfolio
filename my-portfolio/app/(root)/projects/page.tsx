@@ -42,7 +42,7 @@ export default function ProjectsPage() {
     },
     {
       value: "professional",
-      label: "Professional",
+      label: "Academic",
       content: renderContent("professional"),
     },
   ];

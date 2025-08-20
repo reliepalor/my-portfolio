@@ -16,12 +16,7 @@ interface MainNavProps {
   children?: React.ReactNode;
 }
 
-const norican = Norican({
-  weight: ["400"],
-  style: ["normal"],
-  subsets: ["latin"],
-  display: "swap",
-});
+
 
 // Animation variants for the navigation items
 const navItemVariants = {
@@ -53,11 +48,11 @@ export function MainNav({ items, children }: MainNavProps) {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}
       >
-        <Link href="/" className="hidden items-center space-x-2 md:flex">
-          <span className={cn(norican.className, "text-2xl")}>
-            {siteConfig.authorName}
-          </span>
-        </Link>
+      <Link href="/" className="hidden items-center space-x-2 md:flex">
+        <span className="text-2xl font-raleway">
+          {siteConfig.username}
+        </span>
+      </Link>
       </motion.div>
       {items?.length ? (
         <nav className="hidden gap-6 md:flex items-center">
