@@ -29,8 +29,8 @@ export function MobileNav({ items, children }: MobileNavProps) {
     >
       <div className="relative z-20 grid gap-6 rounded-md bg-popover p-4 text-popover-foreground shadow-md">
         <Link href="/" className="flex items-center space-x-2">
-          <span className={cn(norican.className, "text-2xl")}>
-            {siteConfig.authorName}
+          <span className={cn("font-raleway text-xl")}>
+            {siteConfig.username}
           </span>
         </Link>
         <nav className="grid grid-flow-row auto-rows-max text-sm">
@@ -39,7 +39,7 @@ export function MobileNav({ items, children }: MobileNavProps) {
               key={index}
               href={item.disabled ? "#" : item.href}
               className={cn(
-                "flex w-full items-center rounded-md p-2 text-sm font-medium hover:underline",
+                "flex w-full items-center rounded-md p-2 text-sm font-raleway font-medium hover:underline",
                 item.disabled && "cursor-not-allowed opacity-60"
               )}
             >

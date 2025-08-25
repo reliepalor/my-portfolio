@@ -3,7 +3,7 @@ export const siteConfig = {
   authorName: "John Relie Palor",
   username: "reliee/",
   description:
-    "Aspiring web developer - A modern, responsive portfolio to showcase skills, projects.",
+    "Aspiring web developer",
   url: "http://localhost:3000", // leave blank until deployed
   links: {
     twitter: "", // none provided
