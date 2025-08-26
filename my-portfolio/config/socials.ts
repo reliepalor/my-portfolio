@@ -29,8 +29,8 @@ export const SocialLinks: SocialInterface[] = [
   },
   {
     name: "Gmail",
-    username: "naman.barkiya02",
+    username: "reliepalor15@gmail.com",
     icon: Icons.gmail,
-    link: `mailto:${siteConfig.authorName.toLowerCase().replace(/\s+/g, ".")}@gmail.com`,
+    link: `mailto:${siteConfig.gmail + "."}@gmail.com`,
   },
 ];

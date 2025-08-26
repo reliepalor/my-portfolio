@@ -73,4 +73,12 @@ export const pagesConfig: PagesConfig = {
         `${siteConfig.authorName}'s professional journey and experience timeline.`,
     },
   },
+  about: {
+    title: "About",
+    description: "Learn more about John Relie Palor, a web developer passionate about creating modern web experiences.",
+    metadata: {
+      title: "About",
+      description: "Learn more about John Relie Palor, a web developer passionate about creating modern web experiences.",
+    },
+  },
 };

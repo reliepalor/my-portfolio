@@ -22,7 +22,7 @@ import { cn } from "@/lib/utils";
 import profileImg from "@/assets/image/profile-img.jpg";
 
 export const metadata: Metadata = {
-  title: `${pagesConfig.home.metadata.title} | ${siteConfig.name}`,
+  title: pagesConfig.home.metadata.title,
   description: siteConfig.description,
   alternates: {
     canonical: siteConfig.url,
@@ -92,7 +92,7 @@ export default function IndexPage() {
               <AnimatedText delay={0.1}>
                 <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-xs text-primary font-medium">
                   <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
-                  Available for work
+                  studying...
                 </div>
               </AnimatedText>
 
@@ -173,13 +173,13 @@ export default function IndexPage() {
                   <div className="relative bg-card border border-border/50 rounded-2xl p-8 shadow-xl backdrop-blur-sm">
                     {/* Profile Image with Modern Frame */}
                     <div className="relative mb-6">
-                      <div className="absolute -inset-1 bg-gradient-to-r from-primary/20 via-primary/10 to-primary/20 rounded-full blur-sm" />
+                      <div className="absolute -inset-1 bg-gradient-to-r from-primary/20 via-primary/10 to-primary/20 rounded-full blur-sm hover:shadow-lg" />  
                       <Image
                         src={profileImg}
                         height={120}
                         width={120}
                         sizes="120px"
-                        className="relative rounded-full w-[120px] h-[120px] object-cover border-2 border-background"
+                        className="relative rounded-full w-[120px] h-[120px] hover:scale-105 duration-200 ease-in-out object-cover border-2 border-background cursor-pointer"
                         alt={`${siteConfig.authorName} - Developer Portfolio`}
                         priority
                       />
@@ -304,77 +304,6 @@ export default function IndexPage() {
         </AnimatedText>
       </AnimatedSection>
 
-      <AnimatedSection
-        direction="down"
-        className="container space-y-6 bg-muted py-10 my-14"
-        id="contributions"
-      >
-        <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
-          <AnimatedText
-            as="h2"
-            className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl"
-          >
-            {pagesConfig.contributions.title}
-          </AnimatedText>
-          <AnimatedText
-            as="p"
-            delay={0.2}
-            className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7"
-          >
-            {pagesConfig.contributions.description}
-          </AnimatedText>
-        </div>
-        <div className="mx-auto justify-center gap-4 md:w-full lg:grid-cols-3">
-          <ContributionCard contributions={featuredContributions} />
-        </div>
-        <AnimatedText delay={0.4} className="flex justify-center">
-          <Link href="/contributions">
-            <Button variant={"outline"} className="rounded-xl">
-              <Icons.chevronDown className="mr-2 h-4 w-4" /> View All
-            </Button>
-          </Link>
-        </AnimatedText>
-      </AnimatedSection>
-
-      <AnimatedSection
-        direction="left"
-        className="container space-y-6 py-10 my-14"
-        id="experience"
-      >
-        <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
-          <AnimatedText
-            as="h2"
-            className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl"
-          >
-            {pagesConfig.experience.title}
-          </AnimatedText>
-          <AnimatedText
-            as="p"
-            delay={0.2}
-            className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7"
-          >
-            {pagesConfig.experience.description}
-          </AnimatedText>
-        </div>
-        <div className="mx-auto grid justify-center gap-4 md:w-full lg:grid-cols-3">
-          {experiences.slice(0, 3).map((experience, index) => (
-            <AnimatedSection
-              key={experience.id}
-              delay={0.1 * (index + 1)}
-              direction="up"
-            >
-              <ExperienceCard experience={experience} />
-            </AnimatedSection>
-          ))}
-        </div>
-        <AnimatedText delay={0.4} className="flex justify-center">
-          <Link href="/experience">
-            <Button variant={"outline"} className="rounded-xl">
-              <Icons.chevronDown className="mr-2 h-4 w-4" /> View All
-            </Button>
-          </Link>
-        </AnimatedText>
-      </AnimatedSection>
     </ClientPageWrapper>
   );
 }

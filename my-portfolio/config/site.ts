@@ -1,6 +1,7 @@
 export const siteConfig = {
-  name: " Relie Palor",
+  name: "Relie Palor",
   authorName: "John Relie Palor",
+  gmail: "reliepalor15",
   username: "reliee/",
   description:
     "Aspiring web developer",
