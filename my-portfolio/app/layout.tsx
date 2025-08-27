@@ -15,7 +15,6 @@ const fontSans = FontSans({
   variable: "--font-sans",
 });
 
-// Font files can be colocated inside of `pages`
 const fontHeading = localFont({
   src: "../assets/fonts/CalSans-SemiBold.woff2",
   variable: "--font-heading",
@@ -95,7 +94,6 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }: RootLayoutProps) {
-
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
@@ -104,9 +102,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           rel="stylesheet"
         />
       </head>
-      <body
-        className={cn(fontSans.variable, fontHeading.variable)}
-      >
+      <body className={cn(fontSans.variable, fontHeading.variable)}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -117,10 +113,13 @@ export default function RootLayout({ children }: RootLayoutProps) {
           <Analytics />
           <Toaster />
         </ThemeProvider>
+
+        {/* ✅ Google Analytics only if GA ID is set */}
+        {typeof process.env.NEXT_PUBLIC_GA_ID === "string" &&
+          process.env.NEXT_PUBLIC_GA_ID.trim() !== "" && (
+            <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID} />
+          )}
       </body>
-            {process.env.NEXT_PUBLIC_GA_ID && (
-              <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID} />
-            )}
-            </html>
+    </html>
   );
 }
