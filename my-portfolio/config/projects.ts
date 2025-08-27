@@ -124,7 +124,7 @@ export const Projects: ProjectInterface[] = [
       "A collection of interactive math games for elementary students, designed to make learning fun and engaging.",
     websiteLink: undefined,
     githubLink: undefined,
-    techStack: ["HTML", "CSS", "JavaScript"],
+    techStack: ["HTML 5", "CSS 3", "Javascript"],
     startDate: new Date("2023-07-01"), // adjust
     endDate: new Date("2023-07-14"),
     companyLogoImg: "/projects/math-games/math-bg.png", // placeholder
@@ -161,7 +161,7 @@ export const Projects: ProjectInterface[] = [
       "A responsive portfolio website built with Next.js and Tailwind CSS to showcase my projects and skills.",
     websiteLink: undefined,
     githubLink: undefined,
-    techStack: ["Next.js", "TypeScript", "Tailwind CSS"],
+    techStack: ["Next.js", "Typescript", "Tailwind CSS"],
     startDate: new Date("2023-08-01"),
     endDate: new Date("2023-08-14"),
     companyLogoImg: "/projects/portfolio/logo.png", // placeholder
