@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import PageContainer from "@/components/common/page-container";
 import GithubRedirectCard from "@/components/contact/github-redirect-card";
 import { ContactForm } from "@/components/forms/contact-form";
-import { pagesConfig } from "@/config/pages";
+import { pagesConfig } from "../../../config/pages";
 
 export const metadata: Metadata = {
   title: pagesConfig.contact.metadata.title,

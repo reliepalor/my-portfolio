@@ -8,7 +8,7 @@ import { buttonVariants } from "@/components/ui/button";
 import ChipContainer from "@/components/ui/chip-container";
 import CustomTooltip from "@/components/ui/custom-tooltip";
 import { Projects } from "@/config/projects";
-import { siteConfig } from "@/config/site";
+import { siteConfig } from "../../../../config/site";
 import { cn, formatDateFromObj } from "@/lib/utils";
 import profileImg from "@/assets/image/profile-img.jpg";
 

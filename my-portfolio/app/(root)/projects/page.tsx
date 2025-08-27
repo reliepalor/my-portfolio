@@ -3,8 +3,8 @@ import { Metadata } from "next";
 import PageContainer from "@/components/common/page-container";
 import ProjectCard from "@/components/projects/project-card";
 import { ResponsiveTabs } from "@/components/ui/responsive-tabs";
-import { pagesConfig } from "@/config/pages";
-import { Projects } from "@/config/projects";
+import { pagesConfig } from "../../../config/pages";
+import { Projects } from "../../../config/projects";
 
 export const metadata: Metadata = {
   title: pagesConfig.projects.metadata.title,

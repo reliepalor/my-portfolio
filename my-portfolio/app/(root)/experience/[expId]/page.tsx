@@ -11,7 +11,7 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import ChipContainer from "@/components/ui/chip-container";
 import { ResponsiveTabs } from "@/components/ui/responsive-tabs";
 import { experiences } from "@/config/experience";
-import { siteConfig } from "@/config/site";
+import { siteConfig } from "../../../../config/site";
 
 interface ExperienceDetailPageProps {
   params: {

@@ -1,6 +1,6 @@
 import { Metadata } from "next";
-import { siteConfig } from "@/config/site";
-import { pagesConfig } from "@/config/pages";
+import { siteConfig } from "../../../config/site";
+import { pagesConfig } from "../../../config/pages";
 
 // Define the structure for About data
 interface Education {

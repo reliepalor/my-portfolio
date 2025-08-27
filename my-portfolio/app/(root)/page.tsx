@@ -12,12 +12,12 @@ import ExperienceCard from "@/components/experience/experience-card";
 import ProjectCard from "@/components/projects/project-card";
 import SkillsCard from "@/components/skills/skills-card";
 import { Button, buttonVariants } from "@/components/ui/button";
-import { featuredContributions } from "@/config/contributions";
-import { experiences } from "@/config/experience";
-import { pagesConfig } from "@/config/pages";
-import { featuredProjects } from "@/config/projects";
-import { siteConfig } from "@/config/site";
-import { featuredSkills } from "@/config/skills";
+import { featuredContributions } from "../../config/contributions";
+import { experiences } from "../../config/experience";
+import { pagesConfig } from "../../config/pages";
+import { featuredProjects } from "../../config/projects";
+import { siteConfig } from "../../config/site";
+import { featuredSkills } from "../../config/skills";
 import { cn } from "@/lib/utils";
 import profileImg from "@/assets/image/profile-img.jpg";
 

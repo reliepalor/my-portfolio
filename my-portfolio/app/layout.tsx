@@ -7,7 +7,7 @@ import localFont from "next/font/local";
 import { Analytics } from "@/components/common/analytics";
 import { ThemeProvider } from "@/components/common/theme-provider";
 import { Toaster } from "@/components/ui/toaster";
-import { siteConfig } from "@/config/site";
+import { siteConfig } from "../config/site";
 import { cn } from "@/lib/utils";
 
 const fontSans = FontSans({
