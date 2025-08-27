@@ -43,7 +43,7 @@ export default function Project({ params }: ProjectPageProps) {
           dateTime={Date.now().toString()}
           className="block text-sm text-muted-foreground"
         >
-          {formatDateFromObj(project.startDate)}
+          {formatDateFromObj(new Date(project.startDate))}
         </time>
         <h1 className="flex items-center justify-between mt-2 font-heading text-4xl leading-tight lg:text-5xl">
           {project.companyName}

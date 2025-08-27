@@ -20,8 +20,8 @@ export interface ProjectInterface {
   websiteLink?: string;
   githubLink?: string;
   techStack: ValidSkills[];
-  startDate: Date;
-  endDate: Date;
+  startDate: string;
+  endDate: string;
   companyLogoImg: any;
   descriptionDetails: DescriptionDetailsInterface;
   pagesInfoArr: PagesInfoInterface[];
@@ -38,8 +38,8 @@ export const Projects: ProjectInterface[] = [
     websiteLink: undefined,
     githubLink: undefined,
     techStack: ["Laravel", "PHP", "Firebase", "MySQL", "Tailwind CSS"],
-    startDate: new Date("2023-01-01"), // adjust dates as needed
-    endDate: new Date("2023-03-01"),
+    startDate: "2023-01-01", 
+    endDate: "2023-03-01",
     companyLogoImg: "/projects/paw-haven/logo.png", // placeholder
     pagesInfoArr: [
       {
@@ -82,8 +82,8 @@ export const Projects: ProjectInterface[] = [
     websiteLink: undefined,
     githubLink: undefined,
     techStack: ["Laravel", "PHP", "Firebase", "MySQL", "Tailwind CSS"],
-    startDate: new Date("2023-03-01"), // adjust
-    endDate: new Date("2023-06-01"),
+    startDate: "2023-03-01", // adjust
+    endDate: "2023-06-01",
     companyLogoImg: "/projects/smart-lib/dashboard.png", // placeholder
     pagesInfoArr: [
       {
@@ -125,8 +125,8 @@ export const Projects: ProjectInterface[] = [
     websiteLink: undefined,
     githubLink: undefined,
     techStack: ["HTML 5", "CSS 3", "Javascript"],
-    startDate: new Date("2023-07-01"), // adjust
-    endDate: new Date("2023-07-14"),
+    startDate: "2023-07-01", // adjust
+    endDate: "2023-07-14",
     companyLogoImg: "/projects/math-games/math-bg.png", // placeholder
     pagesInfoArr: [
       {
@@ -162,8 +162,8 @@ export const Projects: ProjectInterface[] = [
     websiteLink: undefined,
     githubLink: undefined,
     techStack: ["Next.js", "Typescript", "Tailwind CSS"],
-    startDate: new Date("2023-08-01"),
-    endDate: new Date("2023-08-14"),
+    startDate: "2023-08-01",
+    endDate: "2023-08-14",
     companyLogoImg: "/projects/portfolio/logo.png", // placeholder
     pagesInfoArr: [
       {
