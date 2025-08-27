@@ -1,5 +1,6 @@
 import "./globals.css";
 
+import { GoogleAnalytics } from "@next/third-parties/google";
 import { Inter as FontSans } from "next/font/google";
 import localFont from "next/font/local";
 
@@ -117,6 +118,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
           <Toaster />
         </ThemeProvider>
       </body>
-    </html>
+            {process.env.NEXT_PUBLIC_GA_ID && (
+              <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID} />
+            )}
+            </html>
   );
 }
