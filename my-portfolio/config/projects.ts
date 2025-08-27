@@ -169,17 +169,17 @@ export const Projects: ProjectInterface[] = [
       {
         title: "Home Page",
         description: "Landing section with introduction and quick navigation.",
-        imgArr: ["/projects/portfolio/home.png"], // placeholder
+        imgArr: ["/projects/portfolio/logo.png"], // placeholder
       },
       {
         title: "Projects Page",
         description: "Showcase of featured projects with details.",
-        imgArr: ["/projects/portfolio/projects.png"], // placeholder
+        imgArr: ["/projects/portfolio/logo.png"], // placeholder
       },
       {
         title: "Contact Page",
         description: "Simple contact form and social links.",
-        imgArr: ["/projects/portfolio/contact.png"], // placeholder
+        imgArr: ["/projects/portfolio/logo.png"], // placeholder
       },
     ],
     descriptionDetails: {
