@@ -1,5 +1,5 @@
-import { Icons } from "@/components/common/icons";
-import { siteConfig } from "@/config/site";
+import { Icons } from "../components/common/icons";
+import { siteConfig } from "./site";
 
 interface SocialInterface {
   name: string;
