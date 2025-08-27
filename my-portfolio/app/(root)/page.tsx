@@ -291,7 +291,7 @@ export default function IndexPage() {
               delay={0.1 * (index + 1)}
               direction="up"
             >
-              <ProjectCard project={exp} />
+              <ProjectCard project={exp as any} />
             </AnimatedSection>
           ))}
         </div>
