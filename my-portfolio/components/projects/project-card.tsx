@@ -6,9 +6,13 @@ import { Button } from "@/components/ui/button";
 import ChipContainer from "@/components/ui/chip-container";
 import { ProjectInterface } from "@/config/projects";
 
-interface ProjectCardProps {
-  project: ProjectInterface;
-}
+// Type wrapper to handle Vercel build type conflicts
+type ProjectCardProps = {
+  project: Omit<ProjectInterface, 'startDate' | 'endDate'> & {
+    startDate: string | Date;
+    endDate: string | Date;
+  };
+};
 
 export default function ProjectCard({ project }: ProjectCardProps) {
   return (
