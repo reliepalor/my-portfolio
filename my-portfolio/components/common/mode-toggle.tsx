@@ -2,7 +2,7 @@
 
 import { useTheme } from "next-themes";
 
-import { Icons } from "@/components/common/icons";
+import { Icons } from "./icons";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,

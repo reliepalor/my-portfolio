@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Icons } from "@/components/common/icons";
+import { Icons } from "../common/icons";
 import {
   Tooltip,
   TooltipContent,

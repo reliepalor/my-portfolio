@@ -5,7 +5,7 @@ import Link from "next/link";
 import React from "react";
 
 import { AnimatedSection } from "@/components/common/animated-section";
-import { Icons } from "@/components/common/icons";
+import { Icons } from "../common/icons";
 import { Button } from "@/components/ui/button";
 import { ExperienceInterface } from "@/config/experience";
 

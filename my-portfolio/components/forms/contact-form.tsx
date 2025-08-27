@@ -4,7 +4,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
 
-import { Icons } from "@/components/common/icons";
+import { Icons } from "../common/icons";
 import { Button } from "@/components/ui/button";
 import {
   Form,

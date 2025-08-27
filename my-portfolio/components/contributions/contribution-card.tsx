@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { Icons } from "@/components/common/icons";
+import { Icons } from "../common/icons";
 import { contributionsInterface } from "@/config/contributions";
 
 interface ContributionCardProps {
