@@ -1,10 +1,8 @@
 import "./globals.css";
 
-import { GoogleAnalytics } from "@next/third-parties/google";
 import { Inter as FontSans } from "next/font/google";
 import localFont from "next/font/local";
 
-import { Analytics } from "@/components/common/analytics";
 import { ThemeProvider } from "@/components/common/theme-provider";
 import { Toaster } from "@/components/ui/toaster";
 import { siteConfig } from "../config/site";
@@ -110,16 +108,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
           themes={["light", "dark"]}
         >
           {children}
-          <Analytics />
           <Toaster />
         </ThemeProvider>
-
-        {/* ✅ Google Analytics only if GA ID is set */}
-        {/* Modified to be more resilient to missing env vars during build */}
-        {process.env.NEXT_PUBLIC_GA_ID && typeof process.env.NEXT_PUBLIC_GA_ID === "string" &&
-          process.env.NEXT_PUBLIC_GA_ID.trim() !== "" && (
-            <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID} />
-          )}
       </body>
     </html>
   );
