@@ -115,7 +115,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
         </ThemeProvider>
 
         {/* ✅ Google Analytics only if GA ID is set */}
-        {typeof process.env.NEXT_PUBLIC_GA_ID === "string" &&
+        {/* Modified to be more resilient to missing env vars during build */}
+        {process.env.NEXT_PUBLIC_GA_ID && typeof process.env.NEXT_PUBLIC_GA_ID === "string" &&
           process.env.NEXT_PUBLIC_GA_ID.trim() !== "" && (
             <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID} />
           )}
