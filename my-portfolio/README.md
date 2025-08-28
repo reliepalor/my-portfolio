@@ -44,7 +44,7 @@ To get started with your own portfolio website:
    cd my-portfolio
    ```
 
-2. Copy the contents of `.env.copy` to a new `.env` file and fill in the required information.
+2. Copy the contents of `.env.copy` to a new `.env.local` file and fill in the required information.
 
 3. Install dependencies:
 
@@ -67,6 +67,43 @@ To get started with your own portfolio website:
    ```
 
 5. Open [http://localhost:3000](http://localhost:3000) in your web browser to see the website.
+
+## 📊 Google Analytics Setup
+
+To enable Google Analytics tracking:
+
+### 1. Get Your Google Analytics Measurement ID
+
+1. Go to [Google Analytics](https://analytics.google.com/)
+2. Create a new property or use an existing one
+3. Find your Measurement ID (starts with `G-`)
+
+### 2. Local Development Setup
+
+Add the following to your `.env.local` file:
+
+```bash
+NEXT_PUBLIC_GA_ID=G-YOUR_MEASUREMENT_ID_HERE
+```
+
+Replace `G-YOUR_MEASUREMENT_ID_HERE` with your actual Measurement ID.
+
+### 3. Vercel Deployment Setup
+
+1. Go to your Vercel project dashboard
+2. Navigate to Settings → Environment Variables
+3. Add a new environment variable:
+   - **Name**: `NEXT_PUBLIC_GA_ID`
+   - **Value**: Your Google Analytics Measurement ID (e.g., `G-XXXXXXXXXX`)
+   - **Environment**: Production (and Preview if desired)
+
+4. Redeploy your application for the changes to take effect
+
+### 4. Verify Setup
+
+- Google Analytics will only load when `NEXT_PUBLIC_GA_ID` is set
+- Check your Google Analytics dashboard to see real-time data
+- The analytics code is automatically included in production builds
 
 ## 🎨 Customization
 
