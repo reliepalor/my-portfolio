@@ -114,7 +114,7 @@ export default function IndexPage() {
                   <div className="text-xl sm:text-2xl text-muted-foreground font-light">
                     <span>Exploring the world of web</span>
                     <br />
-                    <span className="text-black dark:text-gray-100">one pixel at a time</span>
+                    <span className="text-black dark:text-gray-100">One pixel at a time</span>
                   </div>
                 </AnimatedText>
               </div>
